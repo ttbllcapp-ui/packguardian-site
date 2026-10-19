@@ -13,17 +13,20 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="muted">Pack Guardian. Last updated: August 26, 2026</p>
+<p class="muted">Pack Guardian. Last updated: October 19, 2026</p>
 
 <h2>Summary</h2>
-<p>Pack Guardian is a package tracking app. We collect the minimum data needed to run the service. We do not sell your data. We do not show ads.</p>
+<p>Pack Guardian is a package tracking app. On a new install it requires a Guardian Premium subscription or lifetime purchase; people who used version 1.0 or 1.0.1 keep free access. We collect the minimum data needed to run the service. We do not sell your data. We do not show ads.</p>
 
 <h2>What we collect</h2>
 <ul>
-<li><b>Anonymous account:</b> when you first open the app we create an anonymous account with a random identifier. No name, email, or phone number is required.</li>
-<li><b>Tracking data:</b> the tracking numbers you add, package nicknames, categories, and declared values you enter.</li>
-<li><b>Optional photos:</b> if you use the unboxing photo feature, the photo is stored with your package record.</li>
+<li><b>Account:</b> by default we create an anonymous account with a random identifier when you first open the app. You can instead create an account with an email and password; in that case we store the email and name you provide.</li>
+<li><b>Tracking data:</b> the tracking numbers you add, package nicknames, categories, and declared values you enter, plus the tracking events we receive for them.</li>
+<li><b>Unboxing photos:</b> if you use the unboxing photo feature, the photo is stored on our server with your package record.</li>
+<li><b>Label photos:</b> if you scan a shipping label, the photo is sent through our server to our AI provider to read the tracking number. We do not store it.</li>
+<li><b>Guardian AI and Claim Shield:</b> your Guardian AI questions are sent, with the package details they need (nickname, carrier, status and recent tracking events), to our AI provider to write an answer. Claim Shield requests send the package's carrier and tracking number with the details you enter (item description and value, what happened, and the name and address you add to the letter) the same way; delay complaint requests send the carrier, tracking number and status. We store your Guardian AI questions and answers and the claim letters you create, so you can see them again in the app.</li>
 <li><b>Preferences:</b> app language and notification settings.</li>
+<li><b>Purchases:</b> if you buy Guardian Premium, Apple and our subscription provider, RevenueCat, process the purchase and keep your subscription active or expired status. RevenueCat identifies you by a randomly generated anonymous identifier, not your name or email.</li>
 </ul>
 
 <h2>How we use it</h2>
@@ -31,20 +34,29 @@
 <li>To show tracking status for the packages you add.</li>
 <li>To generate claim letters and delivery answers you request.</li>
 <li>To remember your settings between sessions.</li>
+<li>To activate and maintain your Guardian Premium access.</li>
 </ul>
 
 <h2>What we do not do</h2>
 <ul>
 <li>We do not sell or rent your data.</li>
 <li>We do not show third-party ads.</li>
-<li>We do not use third-party analytics or tracking SDKs.</li>
+<li>We do not use third-party advertising or analytics SDKs.</li>
 </ul>
 
-<h2>Third parties</h2>
-<p>To provide live tracking, tracking numbers you add may be sent to carrier data providers solely to retrieve shipment status. Tracking numbers are not linked to your identity.</p>
+<h2>Service providers</h2>
+<p>We share data only with the providers that run parts of the service, and only for that purpose:</p>
+<ul>
+<li><b>17TRACK</b> (tracking data): our server sends the tracking numbers you add to 17TRACK to register them and fetch carrier tracking updates. Your name, email and account identifier are not sent.</li>
+<li><b>Emergent</b> (AI gateway) and <b>Anthropic</b> (AI model, currently Claude Haiku 4.5): Guardian AI questions, Claim Shield and delay complaint requests, and label photos are sent through Emergent's AI gateway to Anthropic's Claude model to generate the response.</li>
+<li><b>RevenueCat</b> (subscriptions): an anonymous app user identifier and your purchase and subscription status.</li>
+<li><b>Apple</b> (payments): Apple processes all purchases. We never see your payment details.</li>
+<li><b>Render</b> (server hosting): our server runs on Render.</li>
+<li><b>MongoDB</b> (database): your account, packages, unboxing photos, Guardian AI history and claim letters are stored in our MongoDB database.</li>
+</ul>
 
 <h2>Data retention and deletion</h2>
-<p>You can delete your account and all associated data at any time from Settings, Delete Account. Deletion is immediate and permanent.</p>
+<p>You can delete your account at any time in the app from Settings, Delete account. This immediately and permanently deletes your account, packages, unboxing photos, Guardian AI history and claim letters from our server. Deleting your account does not cancel a subscription; manage that in your Apple ID account settings.</p>
 
 <h2>Contact</h2>
 <p>Questions? Email <a href="mailto:tayfuntolga91bilgi@gmail.com">tayfuntolga91bilgi@gmail.com</a>.</p>
